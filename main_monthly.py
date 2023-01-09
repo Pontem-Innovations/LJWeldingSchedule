@@ -19,7 +19,7 @@ logger.addHandler(logger_file_handler)
 
 if __name__ == "__main__":
     
-    r = requests.get('https://pontem-automation.azurewebsites.net/get_trialbalance')
+    r = requests.get('https://pontem-automation.azurewebsites.net/get_trialbalance/')
     if r.status_code == 200:
         r.encoding='utf-8-sig'
         data = json.loads(r.text)
